@@ -1,0 +1,45 @@
+#banner{
+  display: flex;
+  width: 100vw;
+  height: 350px;
+  margin-left: 0;
+  .banner-container {
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+    padding: 10px 0;
+  }
+
+  .banner-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .banner-container img {
+    width: 100vw;
+    height: auto;
+  }
+
+
+  .banner-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .dot.active, .dot:hover {
+    background-color: #FED30F;
+  }
+}

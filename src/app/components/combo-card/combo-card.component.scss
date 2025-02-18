@@ -1,0 +1,97 @@
+
+
+.combo {
+  width: 450px;
+  height: 400px;
+  background-color:  white;
+  display: inline-block;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  /*transition: all 0.3s ease-in-out;*/
+  margin: 15px;
+}
+
+
+
+
+
+/* .combo:nth-child(odd):hover {
+    background-color: #4a240d;
+    color: white;
+} */
+.combo:nth-child(even):hover {
+  background-color: #fff2e0;
+  color: black;
+}
+
+
+
+.combo img {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+.combo:hover img {
+  transform: scale(1.1);
+}
+
+
+.combo .discount {
+  font-weight: bold;
+  /*transition: color 0.3s ease-in-out;*/
+}
+.combo:nth-child(odd):hover .discount {
+  color: #ffcc00;
+}
+.combo:nth-child(even):hover .discount {
+  color: #ffcc00 !important;
+}
+
+
+.order-btn {
+  background-color: #431615;
+  border: none;
+  color: #ffcc00;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 16px;
+  border-radius: 5px;
+  /*transition: background-color 0.3s ease-in-out, transform 0.2s;*/
+}
+
+/* .combo:order-btn:hover {*/
+/*    background-color: yellow !important;*/
+/*    color: #431615 !important;*/
+/*}*/
+
+.combo:hover {
+  background-color: #431615 !important;
+  color: white !important;
+
+}
+.combo:hover .order-btn{
+  background-color: yellow;
+  color: #431615;
+}
+
+.title{
+  font-weight: bold;
+}
+
+
+
+.discount {
+  font-weight: bold;
+  font-size: 19px;
+  color: #c53b3b;
+}
+
+.price{
+  color: gray;
+}
+
+.combo-image {
+  width: 80%;
+  margin: 0 auto;
+}
