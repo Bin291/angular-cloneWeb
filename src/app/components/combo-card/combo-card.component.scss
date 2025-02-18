@@ -1,15 +1,16 @@
 
 
 .combo {
-  width: 450px;
-  height: 400px;
+  width:397px;
+  height: 352px;
   background-color:  white;
   display: inline-block;
+  justify-content: center;
   text-align: center;
-  padding: 15px;
   border-radius: 8px;
+
   /*transition: all 0.3s ease-in-out;*/
-  margin: 15px;
+  //box-sizing: border-box;
 }
 
 
@@ -28,7 +29,7 @@
 
 
 .combo img {
-  width: 100%;
+  width: 80%;
   transition: transform 0.3s ease-in-out;
 }
 .combo:hover img {
@@ -38,7 +39,7 @@
 
 .combo .discount {
   font-weight: bold;
-  /*transition: color 0.3s ease-in-out;*/
+  transition: color 0.3s ease-in-out;
 }
 .combo:nth-child(odd):hover .discount {
   color: #ffcc00;
@@ -54,7 +55,7 @@
   color: #ffcc00;
   padding: 10px 20px;
   font-weight: bold;
-  margin: 10px 0;
+
   font-size: 16px;
   border-radius: 5px;
   /*transition: background-color 0.3s ease-in-out, transform 0.2s;*/

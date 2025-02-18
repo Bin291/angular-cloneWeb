@@ -6,10 +6,12 @@ import {
   TopBannerImagesContent2Component
 } from './components/top-banner-images-content2/top-banner-images-content2.component';
 import {NavbarContent3Component} from './components/navbar-content3/navbar-content3.component';
+import {ComponentLogoMiddle2Component} from './components/component-logo-middle2/component-logo-middle2.component';
+import {TheLastFooterComponent} from './components/the-last-footer/the-last-footer.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, TopNavbarContent1Component, ComboCardComponent, TopBannerImagesContent2Component, NavbarContent3Component],
+  imports: [RouterOutlet, TopNavbarContent1Component, ComboCardComponent, TopBannerImagesContent2Component, NavbarContent3Component, ComponentLogoMiddle2Component, TheLastFooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

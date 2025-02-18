@@ -1,30 +1,35 @@
 <div id="app">
   <div id="top">
-    <div id="top_content1">
-      <app-top-navbar-content1></app-top-navbar-content1>
-    </div>
-    <div id="top_content2">
-      <app-top-banner-images-content2></app-top-banner-images-content2>
-    </div>
-    <div id="top_content3">
-      <app-navbar-content3></app-navbar-content3>
+    <app-top-navbar-content1></app-top-navbar-content1>
+    <app-top-banner-images-content2></app-top-banner-images-content2>
+    <app-navbar-content3></app-navbar-content3>
     </div>
 
+
+  <div id="middle">
+    <div class="middle1">
+      @for (item of ComboS; track $index){
+        <app-combo-card
+          [image]="item.image"
+          [title]="item.title"
+          [price]="item.price"
+          [discount]="item.discount"
+          [description]="item.description"
+        ></app-combo-card>
+      }
+  </div>
+    <div class="middle2">
+      <app-component-logo-middle2></app-component-logo-middle2>
+    </div>
   </div>
 
-<div id="middle">
-  <div class="middle_content1">
-    @for (item of ComboS; track $index){
-      <app-combo-card
-        [image]="item.image"
-        [title]="item.title"
-        [price]="item.price"
-        [discount]="item.discount"
-        [description]="item.description"
-      ></app-combo-card>
-    }
+  <div class="footer-last">
+    <app-the-last-footer></app-the-last-footer>
   </div>
-</div>
+
+
+
+
 
 
 </div>
