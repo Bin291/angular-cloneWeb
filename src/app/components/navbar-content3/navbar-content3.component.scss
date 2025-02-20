@@ -8,35 +8,41 @@
   //padding: 4px 0;
   align-items: center;
 
+  .snapbar {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+    //padding: 10px 10px;
+    background-color: #3a1411;
+    color: white;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+    cursor: pointer;
+    padding: 6px;
+  }
 
+  .line {
+    width: 1px;
+    height: 20px;
+    background-color: #d1d1d1;
+  }
 
-.snapbar {
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  z-index: 1;
-  transition: background-color 0.3s ease;
-  //padding: 10px 10px;
-  background-color: #3A1411;
-  color: white;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  cursor: pointer;
+  .snapbar:focus {
+    outline: none;
+    background-color: #fcd50d;
+    color: #3a1411;
+    font-weight: bold;
+  }
 }
 
-.line {
-  width: 1px;
-  height: 20px;
-  background-color: #D1D1D1;
-
-}
-
-.snapbar.active {
-  background-color: #FCD50D;
-  color: #3A1411;
-  font-weight: bold;
-}
+button {
+  outline: none;
+  border: none;
 }

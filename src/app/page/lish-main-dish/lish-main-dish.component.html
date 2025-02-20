@@ -1,0 +1,12 @@
+<div id="middle">
+  <div class="middle1">
+    @for (combo of this.mainList; track $index) {
+      <app-combo-card-not-discount
+        [id]="combo.id"
+        [image]="combo.image"
+        [title]="combo.title"
+        [price]="combo.price"
+      ></app-combo-card-not-discount>
+    }
+  </div>
+</div>

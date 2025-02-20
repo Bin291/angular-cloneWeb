@@ -1,11 +1,19 @@
 <div id="content3">
-  <div class="snapbar"><span>COMBO</span></div>
+  <button (click)="navigateTo('')" class="snapbar">
+    <span>COMBO</span>
+  </button>
   <div class="line"></div>
-  <div class="snapbar"><span>MÓM CHÍNH</span></div>
+  <button (click)="navigateTo('mainlist')" class="snapbar">
+    <span>MÓN CHÍNH</span>
+  </button>
   <div class="line"></div>
-  <div class="snapbar"><span>ĂN KÈM</span></div>
+  <button (click)="navigateTo('sidedish')" class="snapbar">
+    <span>ĂN KÈM</span>
+  </button>
   <div class="line"></div>
-  <div class="snapbar"><span>CANH PHẦN</span></div>
+  <button (click)="navigateTo('soup')" class="snapbar">
+    <span>CANH PHẦN</span>
+  </button>
   <div class="line"></div>
-  <div class="snapbar">GIẢI KHÁT</div>
+  <button (click)="navigateTo('water')" class="snapbar">GIẢI KHÁT</button>
 </div>

@@ -1,0 +1,16 @@
+<div class="detail">
+  <img alt="" src="{{ product!.mainDish!.image }}" />
+  <div class="detail-product">
+    <h1>{{ product!.mainDish!.title }}</h1>
+    <p>{{ product!.decription }}</p>
+    <div class="container-price">
+      <p class="price">
+        <s>{{ product!.mainDish.price }}</s>
+      </p>
+      <p class="discount">{{ product?.discount }}đ</p>
+    </div>
+    <div class="button-display">
+      <button>Thêm vào giỏ</button>
+    </div>
+  </div>
+</div>

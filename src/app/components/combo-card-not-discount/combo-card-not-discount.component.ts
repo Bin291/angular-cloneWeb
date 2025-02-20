@@ -1,20 +1,18 @@
 import { Component, Input } from '@angular/core';
-import { ProductService } from '../../services/product.service';
 import { Router } from '@angular/router';
+import { ProductService } from '../../services/product.service';
 
 @Component({
-  selector: 'app-combo-card',
+  selector: 'app-combo-card-not-discount',
   imports: [],
-  templateUrl: './combo-card.component.html',
-  styleUrl: './combo-card.component.scss',
+  templateUrl: './combo-card-not-discount.component.html',
+  styleUrl: './combo-card-not-discount.component.scss',
 })
-export class ComboCardComponent {
-  @Input() id: number = 0;
+export class ComboCardNotDiscountComponent {
   @Input() image = '';
   @Input() title = '';
-  @Input() decriotion = '';
-  @Input() discount: number = 0;
   @Input() price: number = 0;
+  @Input() id: number = 0;
 
   constructor(
     private ProductService: ProductService,
@@ -23,6 +21,6 @@ export class ComboCardComponent {
 
   navigateToDetail(id: number) {
     console.log(id);
-    this.router.navigate(['/product', id]);
+    this.router.navigate(['/mainDish', id]);
   }
 }

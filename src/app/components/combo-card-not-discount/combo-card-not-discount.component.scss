@@ -6,6 +6,7 @@
   justify-content: center;
   text-align: center;
   border-radius: 8px;
+  box-sizing: border-box;
 
   /*transition: all 0.3s ease-in-out;*/
   //box-sizing: border-box;
@@ -22,6 +23,8 @@
 
 .combo img {
   width: 80%;
+  //height: 150px;
+  max-width: 200px;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -29,10 +32,10 @@
   transform: scale(1.1);
 }
 
-.combo .discount {
-  font-weight: bold;
-  transition: color 0.3s ease-in-out;
-}
+//.combo .discount {
+//  font-weight: bold;
+//  transition: color 0.3s ease-in-out;
+//}
 
 .combo:nth-child(odd):hover .discount {
   color: #ffcc00;
@@ -51,6 +54,7 @@
   margin: 30px;
   font-size: 16px;
   border-radius: 5px;
+
   /*transition: background-color 0.3s ease-in-out, transform 0.2s;*/
 }
 
@@ -62,10 +66,14 @@
 .combo:hover {
   background-color: #431615 !important;
   color: white !important;
+
+  .price {
+    color: #ffcc00;
+  }
 }
 
 .combo:hover .order-btn {
-  background-color: yellow;
+  background-color: #ffcc00;
   color: #431615;
 }
 
@@ -74,15 +82,15 @@
   font-weight: bold;
 }
 
-.discount {
+.price {
   font-weight: bold;
   font-size: 19px;
   color: #c53b3b;
 }
 
-.price {
-  color: gray;
-}
+//.price {
+//  color: gray;
+//}
 
 .combo-image {
   width: 80%;
