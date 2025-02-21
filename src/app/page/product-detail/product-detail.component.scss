@@ -11,10 +11,11 @@
 
   .detail-product {
     width: 30%;
-    height: 200px;
+    height: 250px;
     //background-color: #fcd50d;
     flex-direction: column;
     gap: 10px;
+    display: flex;
 
     h1 {
       margin-bottom: 10px;

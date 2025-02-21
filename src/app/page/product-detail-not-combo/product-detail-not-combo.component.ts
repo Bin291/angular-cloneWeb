@@ -20,10 +20,17 @@ export class ProductDetailNotComboComponent {
     const comboId = this.activeRoute.snapshot.params['id'];
     console.log(comboId);
 
-    this.product = productService.getMainDishById(comboId);
-    // this.product = productService.getSideDishById(comboId);
-    // this.product = productService.getWaterById(comboId);
-    // this.product = productService.getSoupById(comboId);
+    if (productService.getMainDishById(comboId)) {
+      this.product = productService.getMainDishById(comboId);
+    } else if (productService.getSideDishById(comboId)) {
+      this.product = productService.getSideDishById(comboId);
+      console.log(this.product);
+    } else if (productService.getWaterById(comboId)) {
+      this.product = productService.getWaterById(comboId);
+    } else if (productService.getSoupById(comboId)) {
+      this.product = productService.getSoupById(comboId);
+      console.log(this.product);
+    }
     // console.log(this.product);
   }
 }

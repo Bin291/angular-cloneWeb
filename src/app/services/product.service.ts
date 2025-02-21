@@ -281,17 +281,17 @@ export class ProductService {
 
   constructor() {}
 
-  // getSideDishById(id: number) {
-  //   return this.sideDish.find((sideDish) => sideDish.id == id);
-  // }
-  //
-  // getWaterById(id: number) {
-  //   return this.water.find((water) => water.id == id);
-  // }
-  //
-  // getSoupById(id: number) {
-  //   return this.soup.find((soup) => soup.id == id);
-  // }
+  getSideDishById(id: number) {
+    return this.sideDish.find((sideDish) => sideDish.id == id);
+  }
+
+  getWaterById(id: number) {
+    return this.water.find((water) => water.id == id);
+  }
+
+  getSoupById(id: number) {
+    return this.soup.find((soup) => soup.id == id);
+  }
 
   getMainDishById(id: number) {
     console.log(id);
